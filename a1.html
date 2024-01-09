@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUX MUNDIS CUP 2023</title>
+    <style>
+        /* Your existing styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 40px;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .welcome-message {
+            margin-bottom: 20px;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .nav-buttons {
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            margin-right: 10px;
+        }
+
+        #logoutButton {
+            background-color: #ff6666;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="loginPage">
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+</div>
+
+<!-- Home Page -->
+<div id="homePage" class="hidden">
+    <!-- Content for Home Page -->
+    <div class="welcome-message">
+        <h2>Welcome to LUX MUNDIS CUP 2023!</h2>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-buttons">
+        <button onclick="showAboutMundiPage()">About Lux Mundi Cup 2023</button>
+        <button onclick="showAboutMePage()">About Me</button>
+        <button onclick="showPhotosPage()">Photos</button>
+        <button onclick="showVideoPage()">Video</button>
+        <button id="logoutButton" onclick="logout()">Log Out</button>
+    </div>
+</div>
+
+<!-- About Lux Mundi Cup 2023 Page -->
+<div id="aboutMundiPage" class="hidden">
+    <!-- Content for About Lux Mundi Cup 2023 Page -->
+    <h2>About Lux Mundi Cup 2023</h2>
+    <p>𝙁𝙪𝙚𝙡𝙚𝙙 𝙗𝙮 𝙄𝙉𝙏𝙀𝙂𝙍𝙄𝙏𝙔, 𝘾𝙊𝙈𝙋𝘼𝙎𝙎𝙄𝙊𝙉, 𝘼𝙉𝘿 𝙀𝙓𝘾𝙀𝙇𝙇𝙀𝙉𝘾𝙀, 𝙬𝙚 𝙖𝙧𝙚 #EndlessLuminance</p>
+
+<p>The Lux Mundis Cup 2023 at Tangub City Global College is the pinnacle of athletic camaraderie and spirited competition, where students come together to showcase their sportsmanship and skill in a variety of intramural events. This prestigious tournament not only celebrates the pursuit of physical excellence but also fosters a sense of community and unity among participants, embodying the college's commitment to holistic development and the flourishing of a vibrant, interconnected student body.</p>
+
+<p>Welcome to 𝐓𝐡𝐞 𝐋𝐮𝐱 𝐌𝐮𝐧𝐝𝐢𝐬 𝐂𝐮𝐩: 𝐄𝐧𝐝𝐥𝐞𝐬𝐬 𝐋𝐮𝐦𝐢𝐧𝐚𝐧𝐜𝐞!</p>
+    <button onclick="showHomePage()">Back</button>
+</div>
+
+<!-- About Me Page -->
+<div id="aboutMePage" class="hidden">
+    <!-- Content for About Me Page -->
+    <h2>About Me</h2>
+    <p>"Hi!, I'm Andrie A. Cantila, I'm 19 years old. I live in Villaba Tangub City. I am a first-year student at Tangub City Global College with the course of BSCS."
+    </p>
+    <button onclick="showHomePage()">Back</button>
+</div>
+
+<!-- Photos Page -->
+<div id="photosPage" class="hidden">
+    <h2>Photos</h2>
+    
+    <!-- Day 1 -->
+    <div id="day1">
+        <h3>Day 1</h3>
+        <p>Opening Ceremony</p>
+        <img src="d1.1.png" alt="Day 1 - Image 1" width="50" height="50">
+        
+        <img src="d1.2.jpg" alt="Day 1 - Image 2" width="50" height="50">
+       
+        <img src="d1.3.jpg" alt="Day 1 - Image 3" width="50" height="50">
+        
+    </div>
+
+    <!-- Day 2 -->
+    <div id="day2">
+        <h3>Day 2</h3>
+        <p>Cheerdance Competition</p>
+        <img src="d2.1.jpg" alt="Day 2 - Image 1" width="50" height="50">
+        
+        <img src="d2.2.jpg" alt="Day 2 - Image 2" width="50" height="50">
+        
+        <img src="d2.3.jpg" alt="Day 2 - Image 3" width="50" height="50">
+        
+    </div>
+
+    <!-- Day 3 -->
+    <div id="day3">
+        <h3>Day 3</h3>
+        SEARCH FOR MR & MS TCGC
+
+</p>
+        <img src="d3.1.jpg" alt="Day 2 - Image 1" width="100" height="100">
+        
+        <img src="d3.2.jpg" alt="Day 2 - Image 2" width="100" height="100">
+        
+        <img src="d3.3.jpg" alt="Day 2 - Image 3" width="100" height="100">
+    </div>
+    
+    <!-- Day 4 -->
+    <div id="day4">
+        <h3>Day 4</h3>
+        <p>Luxmundi Cup</p>
+        <img src="d4.1.jpg" alt="Day 2 - Image 1" width="100" height="100">
+        
+        <img src="d4.2.jpg" alt="Day 2 - Image 2" width="100" height="100">
+        
+        <img src="d4.3.jpg" alt="Day 2 - Image 3" width="100" height="100">
+    </div>
+    
+    <!-- Day 5 -->
+    <div id="day5">
+        <h3>Day 5</h3>
+        <p>Closing Ceremony</p>
+        <img src="d5.1.jpg" alt="Day 2 - Image 1" width="100" height="100">
+        
+        <img src="d5.2.jpg" alt="Day 2 - Image 2" width="100" height="100">
+        
+        <img src="d5.3.jpg" alt="Day 2 - Image 3" width="100" height="100">
+    </div>
+    
+<button onclick="showHomePage()">Back</button>
+</div>
+
+<!-- Video Page -->
+<div id="videoPage" class="hidden">
+    <!-- Content for Video Page -->
+    <h2>Video</h2>
+    <video controls>
+        <source src
+
+="lux_vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>Official Teaser of The Lux Mundis Cup 2023.</p>
+    <p>With six illuminating institutes vying for glory. Who will bring home the cup?</p>
+    <p>Step into a world of radiant strategy as TANGUB CITY GLOBAL COLLEGE unveils the first-ever "THE LUX MUNDIS CUP 2023" with the enchanting theme, 'Endless Luminance.' Brace yourself for a dazzling journey through a realm where light and strategy intertwine, promising an epic showdown of brilliance, wits, endurance, and creativity. The adventure begins, and the cards await your radiant touch.</p>
+    <p>Let the LUMINANCE games commence, fueled by integrity, compassion, and excellence.</p>
+    <p>#TheLuxMundisCup2023 #LuxMundi #LightoftheWorld #TCGCIntramurals2023 #EndlessLuminance</p>
+    <p>Video | KM Monte</p>
+    <p>CTTO: TCGC-Supreme Student Council</p>
+    <button onclick="showHomePage()">Back</button>
+</div>
+
+<script>
+    function login() {
+        // Basic username and password for demonstration
+        const usernameInput = document.getElementById("username").value;
+        const passwordInput = document.getElementById("password").value;
+
+        // Replace these with your actual credentials
+        const validUsername = "user";
+        const validPassword = "pass";
+
+        if (usernameInput === validUsername && passwordInput === validPassword) {
+            // Successful login
+            hideElement("loginPage");
+            showElement("homePage");
+        } else {
+            // Failed login
+            alert("Invalid username or password. Try again.");
+        }
+    }
+
+    function logout() {
+        // Reset username and password inputs
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+
+        // Show login page and hide other pages
+        hideAllPages();
+        showElement("loginPage");
+    }
+
+    function showHomePage() {
+        hideAllPages();
+        showElement("homePage");
+    }
+
+    function showAboutMundiPage() {
+        hideAllPages();
+        showElement("aboutMundiPage");
+    }
+
+    function showAboutMePage() {
+        hideAllPages();
+        showElement("aboutMePage");
+    }
+
+    function showPhotosPage() {
+        hideAllPages();
+        showElement("photosPage");
+    }
+
+    function showVideoPage() {
+        hideAllPages();
+        showElement("videoPage");
+    }
+
+    function hideAllPages() {
+        hideElement("homePage");
+        hideElement("aboutMundiPage");
+        hideElement("aboutMePage");
+        hideElement("photosPage");
+        hideElement("videoPage");
+    }
+
+    function hideElement(elementId) {
+        document.getElementById(elementId).classList.add("hidden");
+    }
+
+    function showElement(elementId) {
+        document.getElementById(elementId).classList.remove("hidden");
+    }
+</script>
+
+</body>
+</html>
